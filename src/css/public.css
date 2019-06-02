@@ -18,7 +18,7 @@ html {
 body {
     height: 100%;
     width: 100%;
-    /*background-image: url(./img/login/bg1.png);*/
+    /*background-image: url(../assets/login/bg1.png);*/
     background-color: #fff;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -113,7 +113,7 @@ input[type=radio] {
 }
 
 input[type=radio]+label {
-    background-image: url(./img/main/btn/abc_btn_radio_to_on_mtrl_000.png);
+    background-image: url(../assets/main/btn/abc_btn_radio_to_on_mtrl_000.png);
     background-size: 100%;
     width: 20px;
     height: 20px;
@@ -126,7 +126,7 @@ input[type=radio]+label {
 }
 
 input[type=radio]:checked+label {
-    background-image: url(./img/main/btn/abc_btn_radio_to_on_mtrl_015.png);
+    background-image: url(../assets/main/btn/abc_btn_radio_to_on_mtrl_015.png);
     background-size: 100%;
     background-color: #707070;
     width: 20px;
@@ -140,7 +140,7 @@ input[type=checkbox] {
 }
 
 input[type=checkbox]+label {
-    background-image: url(./img/main/btn/abc_btn_check_to_on_mtrl_000.png);
+    background-image: url(../assets/main/btn/abc_btn_check_to_on_mtrl_000.png);
     background-size: 100%;
     width: 20px;
     height: 20px;
@@ -153,7 +153,7 @@ input[type=checkbox]+label {
 }
 
 input[type=checkbox]:checked+label {
-    background-image: url(./img/main/btn/abc_btn_check_to_on_mtrl_015.png);
+    background-image: url(../assets/main/btn/abc_btn_check_to_on_mtrl_015.png);
     background-size: 100%;
     background-color: #707070;
     width: 20px;

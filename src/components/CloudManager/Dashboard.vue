@@ -56,7 +56,7 @@ export default {
 #head {
   width: 80px;
   height: 80px;
-  background-image: url("../../css/img/user/product_logo_avatar_circle_blue_color_48.png");
+  background-image: url("../../assets/user/product_logo_avatar_circle_blue_color_48.png");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -64,7 +64,7 @@ export default {
 #VIPimg {
   width: 30px;
   height: 20px;
-  background-image: url("../../css/img/user/VIP.png");
+  background-image: url("../../assets/user/VIP.png");
   background-repeat: no-repeat;
   background-origin: content-box;
   background-size: 100%;

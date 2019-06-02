@@ -1,6 +1,6 @@
 /* eslint-disable standard/no-callback-literal */
 /* globals localStorage */
-// 最初目的是管理登录相关，但是之后代码写的太烂，这边就没怎么调用了
+// 最初目的是管理登录相关，但是之后代码写的太烂，这边就没怎么调用了,后期会修改或删除
 
 import HTTP from './http/axios'
 
