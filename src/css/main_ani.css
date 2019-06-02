@@ -1,0 +1,12 @@
+/***废弃动画，舍不得删除**23333***/
+.top-trans-enter-active {
+    transition: all .3s ease;
+  }
+  .top-trans-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  .top-trans-enter, .top-trans-leave-to
+  /* .top-trans-leave-active for below version 2.1.8 */ {
+    transform: translateY(200px);
+    opacity: 0;
+  }

@@ -1,0 +1,520 @@
+/********************
+* Provide mainpage units css
+* Designed BY WZQ
+*
+**/
+
+@charset "utf-8";
+
+#cloud-warpper {
+  height: 100%;
+  width: 100%;
+  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+}
+
+.cloud-container
+{
+  position: fixed;
+  width: auto;
+  min-width: 400px;
+  height: 100%;
+  margin-left:245px;
+  margin-top: 115px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+}
+
+.nav button,#side-panel button {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin: 5px 10px;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* disk started */
+
+#location{
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #aaa ;
+  background-color: #fff;
+  z-index: 1;
+  font-size: 20px;
+  position: fixed;
+  top: 65px;
+}
+
+.fopt div{
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  background-color: none;
+  float: right;
+  margin-top: 3px;
+  margin-right:10px ;
+}
+#down {
+  background-image: url(../assets/main/task/ic_app_down_white_24dp.png);
+}
+
+#del {
+  background-image: url(../assets/main/task/ic_del_white.png);
+}
+#newF{
+  width: 120px;
+  height: 25px;
+  margin: 1px 10px;
+  background-color: unset;
+  float: left;
+  background-size: 25px;
+  border: 1px solid #aaa ;
+  background-position: 5px;
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  background-image: url(../assets/main/task/ic_mkdir.png);
+}
+
+/**********trans and anime**********/
+@keyframes bigger {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.1);
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .3s;
+}
+
+.fade-enter,
+.fade-leave-to
+{
+    opacity: 0;
+}
+
+.bounce-enter-active {
+    animation: bounce-in 1.2s;
+}
+
+@keyframes bounce-in {
+    0% {
+        transform: scale(0.3);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.bounce-x-enter-active {
+    animation: bounce-x-in 1.2s;
+}
+
+.bounce-x-leave-active {
+    visibility: hidden;
+    display: none;
+}
+
+@keyframes bounce-x-in {
+    0% {
+        transform: scale(0.3);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/**********floder .options **********/
+
+.folder {
+  background-color: #fff;
+  width: 200px;
+  height: 60px;
+  margin: 20px 20px;
+  border-radius: 10px;
+  float: left;
+  opacity: 0.9;
+  border: 1px solid #aaa ;
+}
+.folder:hover{
+  box-shadow:0 8px 16px darkgray;
+}
+
+.folder-logo{
+  margin: 3px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../assets/main/file/ic_mkdir.png");
+  background-size:100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  float: left;
+}
+
+.folder .options {
+  width: 140px;
+  height: 60px;
+  float: left;
+}
+
+ .folder .options div {
+  width: 20px;
+  height: 20px;
+  background-size: 100%;
+  margin: 3px 5px;
+  cursor: pointer;  
+}
+
+.folder .options .pname{
+  width: 100px;
+  height: 60px;
+  font-size: 15px;
+  margin: 10px 3px;
+}
+
+.delete {
+  background-image: url(../assets/main/btn/ic_del_black.png);
+}
+
+/*******file .options **********/
+ .file {
+  background-color: #eee;
+  width: 200px;
+  height: 160px;
+  margin: 20px 20px;
+  border-radius: 1%;
+  float: left;
+  opacity: 0.9;
+  border: 1px solid #aaa ;
+}
+
+.file:hover{
+  box-shadow:0 8px 16px darkgray;
+  animation: bigger .3s;
+  animation-fill-mode: forwards;
+}
+
+.file-logo{
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  background-image: url("../assets/main/file/file.png");
+  background-size:auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+ .name{
+  background-color: #eee;
+  width: 100%;
+  height: 40px;
+  opacity: 0.8;
+  position: relative;
+  top:  60px;
+}
+
+ .file .options {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 60px;
+  transition:all 0.9s;
+}
+
+ .file .options div {
+  display: block;
+  float: left;
+  width: 20px;
+  height: 20px;
+  background-size: 100%;
+  margin: 5px 5px;
+  cursor: pointer;
+}
+
+ .file .download {
+  background-image: url(../assets/main/btn/ic_app_down_black_24dp.png);
+}
+
+.file .share {
+  background-image: url(../assets/main/btn/abc_ic_menu_share_mtrl_black.png);
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  float: right;
+  margin: 3px;
+}
+
+
+.fav{
+  width: 40px;
+  height: 30px;
+  margin: 3px 3px;
+  background-image: url("../assets/main/btn/ic_button_like.png");
+  background-size:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+}
+.faved{
+  
+  width: 40px;
+  height: 30px;
+  margin: 3px 3px;
+  background-image: url("../assets/main/btn/ic_button_liked.png");
+  background-size:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+
+/***********control pannel*********/
+.nav {
+  opacity: 1;
+  background-color: #fff;
+}
+
+#c1{
+  position: fixed;
+  top:0px;
+  height: 64px;
+  width: 100%;
+  font-size: 30px;
+  z-index: 3;
+  border-radius: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #aaa ;
+}
+
+.nav #home{
+  width: 210px;
+  height: 70px;
+  margin: 5px 10px;
+  float: left;
+}
+.nav #home #hlogo
+{
+  width: 40px;
+  height: 40px;
+  margin: 5px 10px;
+  float: left;
+  background-image: url(../assets/main/logo/logo.png);
+  background-size: 100%;
+}
+
+.nav #searchicon{
+  margin: 5px 5px;
+  width: 38px;
+  height: 48px;
+  float: left;
+  
+  
+  margin-left: 40px;
+}
+
+.nav #search {
+  float: left;
+  margin: 8px 0px;
+  border: none;
+  border-radius: 35px;;
+  min-width: 140px;
+  width: 30%;
+  height: 40px;
+  padding-left: 40px;
+  background-image: url(../assets/main/task/ic_nav_search.png);
+  background-position: 10px;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-color: #eee;
+}
+
+.nav #user {
+  background-image: url(../assets/sidepanel/product_logo_avatar_circle_blue_color_48.png);
+  margin:8px 30px;
+  margin-bottom: 20px;
+  width: 40px;
+  height: 40px;
+  float: right;
+  background-color: unset;
+}
+
+/*************side pannel****************/
+
+#side-panel {
+  float: left;
+  width: 240px;
+  height: 100%;
+  background-color: #fff;/*#03a9f4*/
+  z-index: 2;
+  position: fixed;
+}
+#side-panel .clom {
+  padding: 4px 10px;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+}
+
+#side-panel .clom p{
+  float: left;
+  font-size: 20px;
+  margin: 10px 5px;
+}
+
+
+#side-panel .dimg{
+  width: 40px;
+  height: 40px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 5px 5px;
+  float: left;
+}
+
+#side-panel #up {
+  background-image: url(../assets/sidepanel/ic_sc_app_up.png);
+  background-position: 5px 5px;;
+  background-size: 35px;
+  padding-left: 40px;
+  border:1px solid #bbb ;
+  background-color:unset;
+  width: 150px;
+  height: 45px;
+  margin: 0px 15px;
+}
+
+
+
+#side-panel #maindisk {
+  background-image: url(../assets/sidepanel/ic_emoji_blue.png);
+  background-color: #1976d2;
+}
+
+
+#side-panel #bookmark {
+  background-image: url(../assets/sidepanel/faved.png);
+  background-color: #1976d2
+}
+
+#side-panel #shared {
+  background-image: url(../assets/sidepanel/share.png);
+  background-color: #1976d2
+}
+
+
+#side-panel #settings {
+  position:absolute;
+  bottom: 20px;
+  background-image: url(../assets/sidepanel/ic_settings_24dp.png);
+}
+
+/*disk panel end*/
+
+.usage-panel {
+  border-top: 1px solid #aaa ;
+  width: 200px;
+  height: 200px;
+  padding-top: 30px;
+  
+}
+.usage-panel p{
+  margin: 5px 8px;
+  font-size: 12px;  
+}
+#usage-ind{
+  width:100px;
+  height: 100px;
+  margin: 20px auto;
+  border-radius: 50%;
+  opacity: 0.8;
+  border:7px solid rgba(211, 210, 210, 0.836) ;
+}
+#usage-in{
+  width:100px;
+  border-radius: 50%;
+  background-color: #6caae49c;
+}
+
+/*
+
+#progress-ind {
+  background-color: #fff;
+  color: #111;
+  width: 300px;
+  height: 30px;
+  margin: 0px 5px;
+  position: fixed;
+  right: 40px;
+  bottom: 20px;
+}
+
+#progress-ind #switch {
+  color: #111;
+  font-size: 10px;
+  float: right;
+  right: 5px;
+}
+
+#progress-ind #switch button {
+  width: 20px;
+  height: 20px;
+  size: 10px;
+}
+
+#progress-all {
+  position: fixed;
+  right: 40px;
+  bottom: 20px;
+  width: 310px;
+  height: 500px;
+  background-color: cornflowerblue;
+}
+
+#progress-container {
+  background-color: #fff;
+  margin: 10px 5px;
+  width: 300px;
+  height: 400px;
+  overflow-y: auto;
+}
+
+#progress-container #control {
+  background-color: #eee;
+  color: #111;
+}
+
+#progress-container .task {
+  height: 50px;
+  width: 280px;
+  border: 1px #eee solid;
+
+}
+
+
+
+#error {
+  background-color: #111;
+  color: #fff;
+  width: 100%;
+  height: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+*/
