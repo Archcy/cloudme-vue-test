@@ -2,7 +2,7 @@
 
 这是一个技术都很渣的在校学生，使用vue+php用来练手的项目。
 本系统实现了一个动态生成密钥的加密网盘系统。
-此为前端部分。
+
 
 ![Image text](./kt.png)
 ## 目前支持：
@@ -48,8 +48,8 @@
 6. 需要html5支持。 -无可替代方案
 
 7. 用户首次登录时，用户数据无法刷新，需要手动刷新才能解决。-正在检查问题
-
-## Project setup
+## 前端文件
+### Project setup
 ```
 npm install
 ```
@@ -73,9 +73,8 @@ npm run build
 ```
 vue build
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 后端文件
+在项目的 /backend目录下，详细请阅读改目录下的README.md
 
 ## special thanks
 nodejs
